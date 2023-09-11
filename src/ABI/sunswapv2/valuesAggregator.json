@@ -1,0 +1,340 @@
+{
+  "abi": [
+    {
+      "outputs": [
+        {
+          "name": "_exchangeAddr",
+          "type": "address"
+        },
+        {
+          "name": "_allowanceA",
+          "type": "uint256"
+        },
+        {
+          "name": "_allowanceB",
+          "type": "uint256"
+        },
+        {
+          "name": "_exTokenABalance",
+          "type": "uint256"
+        },
+        {
+          "name": "_exTokenBBalance",
+          "type": "uint256"
+        },
+        {
+          "name": "_totalLiquidity",
+          "type": "uint256"
+        },
+        {
+          "name": "_userUniAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "_userTokenAAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "_userTokenBAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "_allowancePair",
+          "type": "uint256"
+        }
+      ],
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "name": "_router",
+          "type": "address"
+        },
+        {
+          "name": "_tokenA",
+          "type": "address"
+        },
+        {
+          "name": "_tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "getSingleInfo",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "outputs": [
+        {
+          "name": "_amount0",
+          "type": "uint256[]"
+        },
+        {
+          "name": "_amount1",
+          "type": "uint256[]"
+        },
+        {
+          "name": "_uniToken",
+          "type": "uint256[]"
+        },
+        {
+          "name": "_totalsupply",
+          "type": "uint256[]"
+        }
+      ],
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "name": "_exchange",
+          "type": "address[]"
+        }
+      ],
+      "name": "getPool",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "outputs": [
+        {
+          "name": "reserveA",
+          "type": "uint256"
+        },
+        {
+          "name": "reserveB",
+          "type": "uint256"
+        }
+      ],
+      "constant": true,
+      "inputs": [
+        {
+          "name": "tokenA",
+          "type": "address"
+        },
+        {
+          "name": "tokenB",
+          "type": "address"
+        },
+        {
+          "name": "exchangeAddr",
+          "type": "address"
+        }
+      ],
+      "name": "getReserves",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "outputs": [
+        {
+          "name": "info",
+          "type": "uint256[]"
+        },
+        {
+          "name": "_allowance",
+          "type": "uint256[]"
+        },
+        {
+          "name": "tokens",
+          "type": "address[]"
+        }
+      ],
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "name": "_tokens",
+          "type": "address[]"
+        },
+        {
+          "name": "_pools",
+          "type": "address[]"
+        }
+      ],
+      "name": "getBalanceAndApprove",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "outputs": [
+        {
+          "type": "address"
+        }
+      ],
+      "constant": true,
+      "inputs": [
+        {
+          "name": "tokenA",
+          "type": "address"
+        },
+        {
+          "name": "tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "getExchange",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "outputs": [
+        {
+          "name": "info",
+          "type": "tuple[]"
+        }
+      ],
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "name": "_tokens",
+          "type": "address[]"
+        }
+      ],
+      "name": "getBalance2",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "outputs": [
+        {
+          "name": "info",
+          "type": "tuple[]"
+        }
+      ],
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "name": "_tokens",
+          "type": "address[]"
+        },
+        {
+          "name": "_pools",
+          "type": "address[]"
+        }
+      ],
+      "name": "getBalanceAndApprove2",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "outputs": [
+        {
+          "name": "reserveA",
+          "type": "uint256[]"
+        },
+        {
+          "name": "reserveB",
+          "type": "uint256[]"
+        }
+      ],
+      "constant": true,
+      "inputs": [
+        {
+          "name": "tokenA",
+          "type": "address[]"
+        },
+        {
+          "name": "tokenB",
+          "type": "address[]"
+        },
+        {
+          "name": "exchangeAddr",
+          "type": "address[]"
+        }
+      ],
+      "name": "getReservesAll",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "outputs": [
+        {
+          "type": "address"
+        }
+      ],
+      "constant": true,
+      "name": "factory",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "outputs": [
+        {
+          "name": "reserveA",
+          "type": "uint256"
+        },
+        {
+          "name": "reserveB",
+          "type": "uint256"
+        }
+      ],
+      "constant": true,
+      "inputs": [
+        {
+          "name": "tokenA",
+          "type": "address"
+        },
+        {
+          "name": "tokenB",
+          "type": "address"
+        },
+        {
+          "name": "exchangeAddr",
+          "type": "address"
+        }
+      ],
+      "name": "getReserves1",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "outputs": [
+        {
+          "name": "info",
+          "type": "uint256[]"
+        }
+      ],
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "name": "_tokens",
+          "type": "address[]"
+        }
+      ],
+      "name": "getBalance",
+      "stateMutability": "View",
+      "type": "Function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_factory",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "Nonpayable",
+      "type": "Constructor"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+export const TRON_MULTICALL_ADDRESS = 'TGXuuKAb4bnrn137u39EKbYzKNXvdCes98'
